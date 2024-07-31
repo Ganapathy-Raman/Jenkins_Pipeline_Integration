@@ -17,7 +17,7 @@ import com.gana.backend.serviceimpl.CustomerServiceImpl;
 
 @RestController
 @RequestMapping("/customer")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:7775")
 public class CustomerController {
 
 	CustomerServiceImpl service;

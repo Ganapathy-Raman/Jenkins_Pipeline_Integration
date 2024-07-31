@@ -25,43 +25,6 @@ class CustomerServiceImplTest {
 		assertEquals("Success", customerService.addCustomer(customer));
 	}
 
-//	@BeforeEach
-//	void init() {
-//		webDriver = new ChromeDriver();
-//	}
-//	
-//	@Test
-//	void testAddCustomer() {
-//		webDriver.get("http://localhost:3000/add");
-//		webDriver.findElement(By.name("customername")).sendKeys("ganapathy");
-//		webDriver.findElement(By.name("customerage")).sendKeys("two");
-//		webDriver.findElement(By.name("customeraddress")).sendKeys("dgl");
-//		webDriver.findElement(By.name("customergender")).sendKeys("male");
-//		webDriver.findElement(By.name("insuranceid")).sendKeys("27");
-//		webDriver.findElement(By.name("submit")).submit();
-//		WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.alertIsPresent());
-//		assertEquals("customer added Successfully",webDriver.switchTo().alert().getText());
-//		webDriver.switchTo().alert().accept();
-//		
-//	}
-//	
-//	@Test
-//	void testAddCustomer1() {
-//		webDriver.get("http://localhost:3000/add");
-//		webDriver.findElement(By.name("customername")).sendKeys("");
-//		webDriver.findElement(By.name("customerage")).sendKeys("two");
-//		webDriver.findElement(By.name("customeraddress")).sendKeys("dgl");
-//		webDriver.findElement(By.name("customergender")).sendKeys("male");
-//		webDriver.findElement(By.name("insuranceid")).sendKeys("27");
-//		webDriver.findElement(By.name("submit")).submit();
-//		WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.alertIsPresent());
-//		assertEquals("Please enter  customername !!!",webDriver.switchTo().alert().getText());
-//		webDriver.switchTo().alert().accept();
-//		
-//	}
-
 	@Test
 	void testAddCustomer1() {
 		Customer customer = null;
@@ -70,7 +33,7 @@ class CustomerServiceImplTest {
 
 	@Test
 	void testGetCustomer() {
-		assertNotNull(customerService.getCustomer(49));
+		assertNotNull(customerService.getCustomer(51));
 	}
 
 	@Test
@@ -96,43 +59,14 @@ class CustomerServiceImplTest {
 		assertEquals("Failed to update", customerService.updateCustomer(customer));
 	}
 
-//	@Test
-//	void testUpdateCustomer() {
-//		webDriver.get("http://localhost:3000/updateCustomer/12");
-//		webDriver.findElement(By.name("customername")).sendKeys("y");
-//		webDriver.findElement(By.name("customerage")).sendKeys(" two");
-//		webDriver.findElement(By.name("customeraddress")).sendKeys("dgl");
-//		webDriver.findElement(By.name("customergender")).sendKeys("e");
-//		webDriver.findElement(By.name("submit")).submit();
-//		WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.alertIsPresent());
-//		assertEquals("customer Updated Successfully",webDriver.switchTo().alert().getText());
-//		webDriver.switchTo().alert().accept();
-//		
-//	}
-
 	@Test
 	void testDeleteCustomer() {
-		assertEquals("Success", customerService.deleteCustomer(49));
+		assertEquals("Success", customerService.deleteCustomer(65));
 	}
 
 	@Test
 	void testDeleteCustomer1() {
 		assertEquals("Failed to delete", customerService.deleteCustomer(8));
 	}
-
-//	@Test
-//	void testDeleteCustomer() {
-//		webDriver.get("http://localhost:3000/viewCustomer");
-//		webDriver.findElement(By.name("delete")).click();
-//		WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.alertIsPresent());
-//		assertEquals("Do you want to delete",webDriver.switchTo().alert().getText());
-//		webDriver.switchTo().alert().accept();
-//		WebDriverWait wait1 = new WebDriverWait(webDriver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.alertIsPresent());
-//		assertEquals("Customer record has been deleted",webDriver.switchTo().alert().getText());
-//		webDriver.switchTo().alert().accept();
-//	}
 
 }

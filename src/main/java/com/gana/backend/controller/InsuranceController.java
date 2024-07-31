@@ -17,7 +17,7 @@ import com.gana.backend.serviceimpl.InsuranceServiceImpl;
 
 @RestController
 @RequestMapping("/insurance")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:7775")
 
 public class InsuranceController {
 

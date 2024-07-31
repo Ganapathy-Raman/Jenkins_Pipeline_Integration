@@ -11,7 +11,7 @@ import com.gana.backend.service.UserService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:7775")
 public class UserController {
 
 	UserService userService;

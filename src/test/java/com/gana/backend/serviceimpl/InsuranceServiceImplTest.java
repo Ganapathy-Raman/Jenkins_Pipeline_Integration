@@ -29,7 +29,7 @@ class InsuranceServiceImplTest {
 
 	@Test
 	void testGetInsurance() {
-		assertNotNull(insuranceService.getInsurance(40));
+		assertNotNull(insuranceService.getInsurance(70));
 	}
 
 	@Test
@@ -58,7 +58,7 @@ class InsuranceServiceImplTest {
 
 	@Test
 	void testDeleteInsurance() {
-		assertEquals("Success", insuranceService.deleteInsurance(57));
+		assertEquals("Success", insuranceService.deleteInsurance(71));
 	}
 
 	@Test
@@ -66,5 +66,4 @@ class InsuranceServiceImplTest {
 		assertEquals("Failed to delete", insuranceService.deleteInsurance(11));
 	}
 
-	
 }
