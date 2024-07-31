@@ -58,7 +58,7 @@ class InsuranceServiceImplTest {
 
 	@Test
 	void testDeleteInsurance() {
-		assertEquals("Success", insuranceService.deleteInsurance(71));
+		assertEquals("Success", insuranceService.deleteInsurance(44));
 	}
 
 	@Test
