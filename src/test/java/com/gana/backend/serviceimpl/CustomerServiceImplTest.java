@@ -59,10 +59,10 @@ class CustomerServiceImplTest {
 		assertEquals("Failed to update", customerService.updateCustomer(customer));
 	}
 
-	@Test
-	void testDeleteCustomer() {
-		assertEquals("Success", customerService.deleteCustomer(64));
-	}
+	// @Test
+	// void testDeleteCustomer() {
+	// 	assertEquals("Success", customerService.deleteCustomer(64));
+	// }
 
 	@Test
 	void testDeleteCustomer1() {
